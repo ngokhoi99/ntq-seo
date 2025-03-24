@@ -1,20 +1,20 @@
 "use client";
 
-import { useState } from "react";
-import { useForm } from "react-hook-form";
+// import { useState } from "react";
+// import { useForm } from "react-hook-form";
 
 export default function ContactPage() {
-  const { register, handleSubmit, reset } = useForm();
-  const [submitted, setSubmitted] = useState(false);
+  // const { register, handleSubmit, reset } = useForm();
+  // const [submitted, setSubmitted] = useState(false);
 
-  const onSubmit = (data: any) => {
-    console.log("Dữ liệu gửi đi:", data);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      reset();
-    }, 3000);
-  };
+  // const onSubmit = (data: any) => {
+  //   console.log("Dữ liệu gửi đi:", data);
+  //   setSubmitted(true);
+  //   setTimeout(() => {
+  //     setSubmitted(false);
+  //     reset();
+  //   }, 3000);
+  // };
 
   return (
     <div className="py-30 bg-gradient-to-b from-blue-50 to-white">
