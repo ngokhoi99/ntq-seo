@@ -100,8 +100,8 @@ export default function Home() {
         </div>
 
           <div className="flex justify-center flex-col md:flex-row items-center pb-50">
-          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[400px]">
-            비즈니스 프로세스 아웃소싱 
+          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[00px]">
+            비즈니스 프로세스 
           </h3>
           <ul className="text-gray-700 mt-10 space-y-2 ">
           <Image
@@ -115,10 +115,10 @@ export default function Home() {
           증가하는 비즈니스 요구에 부응하여 광범위한 지원을 제공하는 BPO 서비스
             <li>✅ 데이터 프로세스 (데이터 입력, 이미지 처리, 데이터 업데이트/생성 등)</li>
             <li>✅ 디지털화(스캔, 인덱스, DTP 등)</li>
-            <Link href="https://ntq.com.vn/ko/service-2/" aria-label="비즈니스 프로세스 아웃소싱">
+           
             <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> 
-            비즈니스 프로세스 아웃소싱
-            </button></Link>
+             <Link href="https://ntq.com.vn/ko/service-2/" aria-label="비즈니스 프로세스 아웃소싱">비즈니스 프로세스</Link>
+            </button>
           </ul>
         </div>
       </div>
