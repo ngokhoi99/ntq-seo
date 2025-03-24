@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white">
       <div className="relative w-full h-screen mt-20">
-        {/* Ảnh nền */}
+        {/*이미지 */}
         <Image 
           src="https://ntq.com.vn/wp-content/themes/ntq_branding/assets/images/ProductOverview/product-hero.webp" 
           alt="엔티큐 코리아"
@@ -14,7 +14,6 @@ export default function Home() {
           className="z-0"
         />
         
-        {/* Văn bản trên ảnh */}
         <div className="absolute inset-0 flex justify-end z-10 items-end pr-10 pb-20 whitespace-pre-line ">
           <div className=" text-blue-500 text-4xl font-bold">글로벌 IT 서비스 공급자 {"\n"}
           <span className=" text-blue-500 text-xl  ">#TheOne은 새로운 성장의 물결로 {"\n"}
@@ -44,8 +43,9 @@ export default function Home() {
             <li>✅ 신기술 개발</li>
             <li>✅ 오프쇼어 개발 센터</li>
             <li>✅ 디지털 혁신 컨설팅</li>
-            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link href="https://ntq.com.vn/ko/service-2/">
-            자세히 보기</Link>
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> 
+              <Link href="https://ntq.com.vn/ko/service-2/" aria-label="소프트웨어 개발 서비스">
+              소프트웨어 개발 서비스</Link>
             </button>
           </ul>
         </div>
@@ -67,8 +67,9 @@ export default function Home() {
             <li>✅ 파트너십 및 합작 투자</li>
             <li>✅ 기술 플랫폼 통합</li>
             <li>✅ 소프트웨어 솔루션 개발</li>
-            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link href="https://ntq.com.vn/ko/service-2/">
-            자세히 보기</Link>
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> 
+              <Link href="https://ntq.com.vn/ko/service-2/" aria-label="통합 및 솔루션">
+              통합 및 솔루션</Link>
             </button>
           </ul>
         </div>
@@ -91,8 +92,9 @@ export default function Home() {
             <li>✅ 인공지능, IoT, 클라우드</li>
             <li>✅ 블록체인</li>
             <li>✅ 친환경 에너지</li>
-            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link href="https://ntq.com.vn/ko/service-2/">
-            자세히 보기</Link>
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> 
+              <Link href="https://ntq.com.vn/ko/service-2/" aria-label="연구 및 개발">
+              연구 및 개발</Link>
             </button>
           </ul>
         </div>
@@ -113,9 +115,10 @@ export default function Home() {
           증가하는 비즈니스 요구에 부응하여 광범위한 지원을 제공하는 BPO 서비스
             <li>✅ 데이터 프로세스 (데이터 입력, 이미지 처리, 데이터 업데이트/생성 등)</li>
             <li>✅ 디지털화(스캔, 인덱스, DTP 등)</li>
-            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link  href="https://ntq.com.vn/ko/service-2/">
-            자세히 보기</Link>
-            </button>
+            <Link href="https://ntq.com.vn/ko/service-2/" aria-label="비즈니스 프로세스 아웃소싱">
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> 
+            비즈니스 프로세스 아웃소싱
+            </button></Link>
           </ul>
         </div>
       </div>

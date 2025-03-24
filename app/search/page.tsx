@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { Search } from "lucide-react";
 
 const mockData = [
-  { id: 1, title: "NTQ Korea 소개", link: "/about" },
-  { id: 2, title: "서비스 개요", link: "/services" },
-  { id: 3, title: "채용 정보", link: "/careers" },
+  { id: 1, title: "NTQ Korea 소개", link: "/contact" },
+  { id: 2, title: "서비스 개요", link: "/contact" },
+  { id: 3, title: "채용 정보", link: "/contact" },
   { id: 4, title: "문의하기", link: "/contact" },
   { id: 4, title: "제품 정보", link: "/contact" },
   { id: 4, title: "산업 분야", link: "/contact" },
