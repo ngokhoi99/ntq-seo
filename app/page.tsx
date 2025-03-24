@@ -100,7 +100,7 @@ export default function Home() {
         </div>
 
           <div className="flex justify-center flex-col md:flex-row items-center pb-50">
-          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[00px]">
+          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[400px]">
             비즈니스 프로세스 
           </h3>
           <ul className="text-gray-700 mt-10 space-y-2 ">
