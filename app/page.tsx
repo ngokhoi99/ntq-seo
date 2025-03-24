@@ -1,103 +1,125 @@
-import Image from "next/image";
 
+import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <section className="bg-gradient-to-b from-blue-50 to-white">
+      <div className="relative w-full h-screen mt-20">
+        {/* Ảnh nền */}
+        <Image 
+          src="https://ntq.com.vn/wp-content/themes/ntq_branding/assets/images/ProductOverview/product-hero.webp" 
+          alt="엔티큐 코리아"
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        
+        {/* Văn bản trên ảnh */}
+        <div className="absolute inset-0 flex justify-end z-10 items-end pr-10 pb-20 whitespace-pre-line ">
+          <div className=" text-blue-500 text-4xl font-bold">글로벌 IT 서비스 공급자 {"\n"}
+          <span className=" text-blue-500 text-xl  ">#TheOne은 새로운 성장의 물결로 {"\n"}
+          비즈니스를 향합니다.</span>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </div>
+      <div className=" bg-gradient-to-b from-blue-100 to-white">
+        {/* Phần nội dung bên trái */}
+        <h2 className="text-6xl font-bold text-blue-900 flex items-center justify-center pt-10">우리의 전문 분야</h2>
+        <div className="flex justify-center flex-col md:flex-row items-center ">
+          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[400px]">
+            소프트웨어 개발 서비스
+          </h3>
+          <ul className="text-gray-700 mt-5 space-y-2 ">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="https://ntq.com.vn/wp-content/themes/ntq_branding/assets/images/img-service1.webp" // Đổi thành URL hoặc import ảnh phù hợp
+            alt="IT 서비스"
+            width={500}
+            height={220}
+            className="rounded-lg shadow-lg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          기업을 위한 포괄적인 IT 컨설팅, 현대화, 개발 및 유지 관리 <br/>
+          서비스 제공
+            <li>✅ IT 평가 및 현대화</li>
+            <li>✅ 소프트웨어 개발</li>
+            <li>✅ 신기술 개발</li>
+            <li>✅ 오프쇼어 개발 센터</li>
+            <li>✅ 디지털 혁신 컨설팅</li>
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link href="https://ntq.com.vn/ko/service-2/">
+            자세히 보기</Link>
+            </button>
+          </ul>
+        </div>
+
+        <div className="flex justify-center flex-col md:flex-row items-center ">
+          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[400px]">
+            통합 및 솔루션
+          </h3>
+          <ul className="text-gray-700 mt-10 space-y-2 ">
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="https://ntq.com.vn/wp-content/themes/ntq_branding/assets/images/Bg-img-2.webp" // Đổi thành URL hoặc import ảnh phù hợp
+            alt="IT 서비스"
+            width={500}
+            height={220}
+            className="rounded-lg shadow-lg"
+            
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          획기적인 제품을 위한 현대 기술 플랫폼 통합 및 다른 기업과의 <br/>협력 서비스 개발
+            <li>✅ 파트너십 및 합작 투자</li>
+            <li>✅ 기술 플랫폼 통합</li>
+            <li>✅ 소프트웨어 솔루션 개발</li>
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link href="https://ntq.com.vn/ko/service-2/">
+            자세히 보기</Link>
+            </button>
+          </ul>
+        </div>
+
+        <div className="flex justify-center flex-col md:flex-row items-center ">
+          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[400px]">
+            연구 및 개발
+          </h3>
+          <ul className="text-gray-700 mt-10 space-y-2 ">
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="https://ntq.com.vn/wp-content/themes/ntq_branding/assets/images/Bg-img-3.webp" // Đổi thành URL hoặc import ảnh phù hợp
+            alt="IT 서비스"
+            width={500}
+            height={220}
+            className="rounded-lg shadow-lg"
+            
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+          지역 사회에 지속 가능한 삶의 가치를 창출하는 첨단 기술
+          <br/>연구 및 개발
+            <li>✅ 인공지능, IoT, 클라우드</li>
+            <li>✅ 블록체인</li>
+            <li>✅ 친환경 에너지</li>
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link href="https://ntq.com.vn/ko/service-2/">
+            자세히 보기</Link>
+            </button>
+          </ul>
+        </div>
+
+          <div className="flex justify-center flex-col md:flex-row items-center pb-50">
+          <h3 className="text-3xl text-gray-600 mt-4  flex justify-end pr-20 w-[400px]">
+            비즈니스 프로세스 아웃소싱 
+          </h3>
+          <ul className="text-gray-700 mt-10 space-y-2 ">
+          <Image
+            src="https://ntq.com.vn/wp-content/themes/ntq_branding/assets/images/Bg-img-4.webp" // Đổi thành URL hoặc import ảnh phù hợp
+            alt="IT 서비스"
+            width={500}
+            height={220}
+            className="rounded-lg shadow-lg"
+            
+          />
+          증가하는 비즈니스 요구에 부응하여 광범위한 지원을 제공하는 BPO 서비스
+            <li>✅ 데이터 프로세스 (데이터 입력, 이미지 처리, 데이터 업데이트/생성 등)</li>
+            <li>✅ 디지털화(스캔, 인덱스, DTP 등)</li>
+            <button className=" px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"> <Link  href="https://ntq.com.vn/ko/service-2/">
+            자세히 보기</Link>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </section>
+   
+);
 }
